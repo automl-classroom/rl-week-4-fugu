@@ -27,6 +27,7 @@ class QNetwork(nn.Module):
         """
         super().__init__()
 
+        self.hidden_dim = hidden_dim
         self.net = nn.Sequential(
             OrderedDict(
                 [
